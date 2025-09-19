@@ -32,24 +32,18 @@ See the PDF for command descriptions, usage variants, and troubleshooting.
 
 ---
 
-## Example Designs
+## Example Designs (In progess)
 
 The document includes code and testbenches for:
 - Basic logic gates (NOT, OR, AND, NAND, NOR, XOR, XNOR)
 - Common flip-flops (SR, JK, D, T)
-- Full adder (structural and behavioral style)
-
----
-
-## References
-
-- All command-line examples, environment steps, and coding styles are cited from `VCS-and-Verdi.pdf` in this repository[attached_file:1].
+- Full adder
 
 ---
 
 ## License
 
-*(Add your preferred license here, e.g., MIT, or state "For academic use only" if unsure.)*
+"For academic use only"
 
 ---
 
