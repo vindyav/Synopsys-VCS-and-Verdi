@@ -1,104 +1,58 @@
-# VCS and Verdi – Verilog Simulation and Debugging
+# VCS and Verdi Simulation Guide
 
-This repository contains Verilog implementations and testbenches for fundamental digital circuits (gates, flip-flops, adders) along with step-by-step instructions to simulate and debug designs using **Synopsys VCS** and **Verdi**.
-
----
-
-## 🚀 Features
-- Gate-level circuits: **NOT, AND, OR, NAND, NOR, XOR, XNOR**
-- Sequential circuits: **SR, JK, D, and T Flip-Flops**
-- **Full Adder** design with testbench
-- Waveform debugging with **Verdi** (`.fsdb` files)
-- Commands for compiling, simulating, and debugging using **VCS**
+This repository provides a comprehensive step-by-step manual for compiling, running, and debugging Verilog code using **Synopsys VCS** and **Verdi**. The guide is suitable for students and engineers practicing digital design and verification flows in industry-standard environments.
 
 ---
 
-## 🛠️ Tools Used
-- **Synopsys VCS** – Simulation
-- **Synopsys Verdi** – Waveform Debugging
-- Linux shell environment
+## Contents
+
+- `VCS-and-Verdi.pdf` — Main documentation on setup, commands, and example Verilog modules.
+    - Environment setup instructions
+    - How to compile and simulate with VCS
+    - Debugging with Verdi GUI (waveform viewing)
+    - Sample code for basic gates and flip-flops
+    - Full adder Verilog example and testbench
+    - Waveform generation and export procedures
 
 ---
 
-## 📂 Repository Structure
-├── gates/
-│ ├── not_gate.v
-│ ├── not_gate_tb.v
-│ ├── and_gate.v
-│ ├── and_gate_tb.v
-│ └── ...
-├── flipflops/
-│ ├── sr_ff.v
-│ ├── sr_ff_tb.v
-│ ├── jk_ff.v
-│ └── ...
-├── adder/
-│ ├── full_adder.v
-│ └── full_adder_tb.v
-├── scripts/
-│ └── vcs_commands.sh # compile/run/debug commands
-└── README.md
+## Quick Start
 
-yaml
-Copy code
+1. **Environment Setup**
+    - Load Synopsys environment variables and tool setup scripts as explained in the PDF.
+2. **Compile Design**
+    - Use provided VCS commands to compile your Verilog files (e.g. `vcs -full64 yourtb.v -debug_access+all -lca -kdb`).
+3. **Run Simulation**
+    - Execute the compiled simulation with `.simv` and prepare waveforms for Verdi.
+4. **Debug with Verdi**
+    - Open the waveform `.fsdb` in Verdi: `verdi -ssf novas.fsdb -nologo`
+    - Add signals and explore results interactively as illustrated in the guide.
+
+See the PDF for command descriptions, usage variants, and troubleshooting.
 
 ---
 
-## ⚡ Quick Start
+## Example Designs
 
-1. **Load environment:**
-   ```bash
-   source /home/SynopsysInstalledTools/SetupFiles/bashrc
-   source /home/SynopsysInstalledTools/SetupFiles/vcs_setup
-Compile design:
+The document includes code and testbenches for:
+- Basic logic gates (NOT, OR, AND, NAND, NOR, XOR, XNOR)
+- Common flip-flops (SR, JK, D, T)
+- Full adder (structural and behavioral style)
 
-bash
-Copy code
-vcs -full64 full_adder_tb.v -debug_access+all -lca -kdb
-Run simulation:
+---
 
-bash
-Copy code
-./simv verdi
-Open waveforms in Verdi:
+## References
 
-bash
-Copy code
-verdi -ssf novas.fsdb -nologo
-📸 Waveform Debugging in Verdi
-Inside Verdi GUI:
+- All command-line examples, environment steps, and coding styles are cited from `VCS-and-Verdi.pdf` in this repository[attached_file:1].
 
-Go to Windows → Interactive Debug Mode
+---
 
-Simulation → Invoke Simulator
+## License
 
-Simulation → Run and Continue
+*(Add your preferred license here, e.g., MIT, or state "For academic use only" if unsure.)*
 
-View → Signal List → Add to Waveform → New Waveform
+---
 
-👉 To save waveforms as images:
-File → Capture Window → Save As (.png)
+## Acknowledgments
 
-📜 Example Designs
-Logic Gates: NOT, AND, OR, NAND, NOR, XOR, XNOR
-
-Flip-Flops: SR, JK, D, T
-
-Combinational: Full Adder
-
-Each design includes:
-
-Verilog source (.v)
-
-Testbench (_tb.v)
-
-Debug setup for VCS + Verdi
-
-👤 Author
-Namala Vindya Vahini
-
-📧 vindya2102@gmail.com
-
-🌐 LinkedIn
-
-💻 GitHub
+Developed for use with Synopsys tools for Verilog simulation and debugging in academic/industrial digital design flows.
