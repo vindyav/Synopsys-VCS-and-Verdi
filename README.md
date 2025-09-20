@@ -1,52 +1,51 @@
-# VCS and Verdi Simulation Guide
+# VCS and Verdi Guide
 
-This repository provides a comprehensive step-by-step manual for compiling, running, and debugging Verilog code using **Synopsys VCS** and **Verdi**. The guide is suitable for students and engineers practicing digital design and verification flows in industry-standard environments.
+This repository documents step-by-step instructions for running simulation and debugging Verilog designs using **Synopsys VCS and Verdi**[file:2].  
+It includes setup commands, compilation flags, waveform generation, and example modules for common digital blocks.
 
----
+## Repository Status
+
+This project is **in progress**.  
+Future updates will include more Verilog projects, practical testbenches, and simulation waveforms.
 
 ## Contents
 
-- `VCS-and-Verdi.pdf` — Main documentation on setup, commands, and example Verilog modules.
-    - Environment setup instructions
-    - How to compile and simulate with VCS
-    - Debugging with Verdi GUI (waveform viewing)
-    - Sample code for basic gates and flip-flops
-    - Full adder Verilog example and testbench
-    - Waveform generation and export procedures
+- VCS and Verdi Setup (environment, compilation, debug, run)
+- Example Verilog modules (logic gates, flip-flops, full adder)
+- Stepwise simulation and waveform generation
+- Saving waveforms and signal lists
+
+## Usage
+
+1. Set up Synopsys VCS/Verdi environment:
+    ```
+    source /path/to/Synopsys/SetupFiles/bashrc
+    source /path/to/Synopsys/SetupFiles/vcssetup
+    ```
+2. Compile:
+    ```
+    vcs -full64 <testbench>.v -debugaccess+all -lca -kdb
+    ```
+3. Run simulation:
+    ```
+    ./simv
+    verdi -ssf novas.fsdb -nologo
+    ```
+
+See the main PDF [VCS-and-Verdi.pdf] for complete details.
+
+## Planned Additions
+
+- Verilog project folder (RTL and testbenches)
+- Example projects (Adder, MUX, FSM, etc.) coming soon
+
+## Author
+
+Namala Vindya Vahini  
+MTech, ECE (VLSI specialization)
+Gmail: 212516002@ece.iiitp.ac.in
 
 ---
 
-## Quick Start
+> For any issues or suggestions, feel free to open an issue or submit a pull request!
 
-1. **Environment Setup**
-    - Load Synopsys environment variables and tool setup scripts as explained in the PDF.
-2. **Compile Design**
-    - Use provided VCS commands to compile your Verilog files (e.g. `vcs -full64 yourtb.v -debug_access+all -lca -kdb`).
-3. **Run Simulation**
-    - Execute the compiled simulation with `.simv` and prepare waveforms for Verdi.
-4. **Debug with Verdi**
-    - Open the waveform `.fsdb` in Verdi: `verdi -ssf novas.fsdb -nologo`
-    - Add signals and explore results interactively as illustrated in the guide.
-
-See the PDF for command descriptions, usage variants, and troubleshooting.
-
----
-
-## Example Designs (In progess)
-
-The document includes code and testbenches for:
-- Basic logic gates (NOT, OR, AND, NAND, NOR, XOR, XNOR)
-- Common flip-flops (SR, JK, D, T)
-- Full adder
-
----
-
-## License
-
-"For academic use only"
-
----
-
-## Acknowledgments
-
-Developed for use with Synopsys tools for Verilog simulation and debugging in academic/industrial digital design flows.
