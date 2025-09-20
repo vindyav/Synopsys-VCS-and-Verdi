@@ -1,6 +1,6 @@
 # VCS and Verdi Guide
 
-This repository documents step-by-step instructions for running simulation and debugging Verilog designs using (**Synopsys VCS and Verdi**)[https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf].  
+This repository documents step-by-step instructions for running simulation and debugging Verilog designs using [**Synopsys VCS and Verdi**](https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf).  
 It includes setup commands, compilation flags, waveform generation, and example modules for common digital blocks.
 
 ## Repository Status
