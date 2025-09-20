@@ -1,6 +1,6 @@
 # VCS and Verdi Guide
 
-This repository documents step-by-step instructions for running simulation and debugging Verilog designs using [**Synopsys VCS and Verdi**](https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf).  
+This repository documents step-by-step instructions for running simulation and debugging Verilog designs using **Synopsys VCS and Verdi**.  
 It includes setup commands, compilation flags, waveform generation, and example modules for common digital blocks.
 
 ## Repository Status
@@ -32,7 +32,7 @@ Future updates will include more Verilog projects, practical testbenches, and si
     verdi -ssf novas.fsdb -nologo
     ```
 
-See the main PDF [VCS and Verdi Pdf](https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf) for complete details.
+See the main PDF [VCS and Verdi Pdf](https://docs.google.com/document/d/1fXfshF0VRxcgWyGi8sUj9Bm7mMnYSIzBqUfudRh2o98/edit?usp=sharing) for complete details.
 
 ## Planned Additions
 - Example projects (Adder, MUX, FSM, etc.)
