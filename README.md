@@ -32,20 +32,20 @@ Future updates will include more Verilog projects, practical testbenches, and si
     verdi -ssf novas.fsdb -nologo
     ```
 
-See the main PDF [VCS-and-Verdi.pdf] for complete details.
+See the main PDF [VCS and Verdi Pdf](https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf) for complete details.
 
 ## Planned Additions
 
-- Verilog project folder (RTL and testbenches)
-- Example projects (Adder, MUX, FSM, etc.) coming soon
+- Advanced projects coming soon
 
 ## Author
 
 Namala Vindya Vahini  
-MTech, ECE (VLSI specialization)
+MTech, ECE (VLSI specialization)  
 Gmail: 212516002@ece.iiitp.ac.in
 
 ---
 
-> For any issues or suggestions, feel free to open an issue or submit a pull request!
+> For any issues or suggestions, feel free to open an issue to Gmail or submit a pull request!
+
 
