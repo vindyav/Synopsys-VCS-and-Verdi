@@ -35,8 +35,8 @@ Future updates will include more Verilog projects, practical testbenches, and si
 See the main PDF [VCS and Verdi Pdf](https://github.com/vindyav/Synopsys-VCS-and-Verdi/blob/main/VCS%20and%20Verdi.pdf) for complete details.
 
 ## Planned Additions
-
-- Advanced projects coming soon
+- Example projects (Adder, MUX, FSM, etc.)
+- Advanced projects (SVD, ...)
 
 ## Author
 
